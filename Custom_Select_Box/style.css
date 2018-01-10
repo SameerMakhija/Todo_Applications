@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    padding: 15px;
+    background: #25b99a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header input {
+    width: 100%;
+    height: 50px;
+    float: left;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-indent: 15px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: rgba(58, 148, 129, 0.5);
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 25px;
+
+    z-index: 5;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;   
+}
+
+header button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 25px;
+
+    outline: none;
+    border: 0;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+header button svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -8px 0 0 -8px;
+}
+
+header button svg .fill {
+    fill: #25b99a;
+}
+
+header .dropDownListBlock {
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    left: 0;
+    padding: 0 40px 0px 15px;
+     
+}
+
+header .dropDownListBlock ul {
+    width: 100%;
+    float: left;
+    border: 1px solid rgba(58, 148, 129, 0.5);
+    background:  #25b99a;
+    box-shadow: 2px 5px 5px rgba(37, 185,154, .5);  
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header .dropDownListBlock ul li {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    border-top: 1px solid #FFF;
+}
+
+header .dropDownListBlock ul li:first-of-type {
+    border-top: 0;
+}
+
+header input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+header input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+header input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+header input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+ 
+
