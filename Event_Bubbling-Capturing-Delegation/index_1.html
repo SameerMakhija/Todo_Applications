@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Event Handler on the Parent Element</title>
+    </head>
+    <body>
+        <div id="menu">
+            <button data-action="save" data-myproperty="some">Save</button>
+            <button data-action="load" data-myproperty="some">Load</button>
+            <button data-action="search" data-myproperty="some">Search</button>
+        </div>
+
+        <script>
+            class Menu {
+                constructor(elem) {
+                    this._elem = elem;
+                    elem.onclick = this.onClick.bind(this); // (*)
+                }
+
+                save() {
+                    alert('saving');
+                }
+
+                load() {
+                    alert('loading');
+                }
+
+                search() {
+                    alert('searching');
+                }
+
+                onClick(event) {
+                    let action = event.target.dataset.action;
+                    if (action) {
+                        this[action]();
+                    }
+                };
+            }
+            console.log(menu);
+            new Menu(menu);
+        </script>
+    </body>
+</html>

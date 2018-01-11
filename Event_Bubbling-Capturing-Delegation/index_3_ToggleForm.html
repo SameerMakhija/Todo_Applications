@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Event Delegation </title>
+    </head>
+    <body>
+        <h3>Event Handler on the Parent Element - Toggle Forms </h3>
+
+        <button value="1" data-toggle-form="submit-form">Click me </button>
+        
+        <form id="submit-form" hidden >
+            <label for="username"></label>
+            <input type="text" id="username" placeholder="Enter text" />
+        </form>
+
+        <script>
+            document.addEventListener('click', function(event) {
+                const id = event.target.dataset.toggleForm;
+                if( !id ) return;
+
+                let elem = document.getElementById(id);
+                elem.hidden = !elem.hidden;
+            });
+        </script>
+    </body>
+</html>
