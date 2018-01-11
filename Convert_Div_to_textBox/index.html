@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Div to input and textarea</title>
+
+    <style>
+        textarea {
+            height: 28px;
+            width: 400px;
+        }
+
+        #textarea {
+            -moz-appearance: textfield-multiline;
+            -webkit-appearance: textarea;
+            border: 1px solid gray;
+            font: medium -moz-fixed;
+            font: -webkit-small-control;
+            height: 28px;
+            overflow: auto;
+            padding: 2px;
+            resize: both;
+            width: 400px;
+        }
+
+        input {
+            margin-top: 5px;
+            width: 400px;
+        }
+
+        #input {
+            -moz-appearance: textfield;
+            -webkit-appearance: textfield;
+            background-color: white;
+            background-color: -moz-field;
+            border: 1px solid darkgray;
+            box-shadow: 1px 1px 1px 0 lightgray inset;  
+            font: -moz-field;
+            font: -webkit-small-control;
+            margin-top: 5px;
+            padding: 2px 3px;
+            width: 398px;
+        }
+    </style>
+</head>
+<body>
+    <!-- https://jsfiddle.net/ThinkingStiff/AbKTQ/ -->
+    <h2>Convert Div to input and textarea</h2>
+
+    <textarea>I am a textarea</textarea>
+    <div id="textarea" contenteditable>I look like a textarea</div>
+
+    <input value="I am an input" />
+    <div id="input" contenteditable>I look like an input</div>
+</body>
+</html>
