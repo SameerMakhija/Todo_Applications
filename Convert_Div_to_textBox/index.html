@@ -42,6 +42,21 @@
             padding: 2px 3px;
             width: 398px;
         }
+
+        .whatever{
+            background-color: red;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+
+        #checkboxes input[type=checkbox]{
+            display: none;
+        }
+
+        #checkboxes input[type=checkbox]:checked + .whatever{
+            background-color: green;
+        }     
     </style>
 </head>
 <body>
@@ -53,5 +68,17 @@
 
     <input value="I am an input" />
     <div id="input" contenteditable>I look like an input</div>
+
+    <!-- http://jsfiddle.net/nicosemp/c3n12ey3/7/ -->
+    <div style="margin-top:20px;">
+        <div id="checkboxes">
+                <input type="checkbox" name="rGroup" value="1" id="r1" checked="checked" />
+                <label class="whatever" for="r1"></label>
+                <input type="checkbox" name="rGroup" value="2" id="r2" />
+                <label class="whatever" for="r2"></label>
+                <input type="checkbox" name="rGroup" value="3" id="r3" />
+                <label class="whatever" for="r3"></label>
+        </div>
+    </div>
 </body>
 </html>
