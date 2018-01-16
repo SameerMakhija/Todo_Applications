@@ -1,0 +1,41 @@
+  .demo {
+    margin-left: 80px;
+  }
+
+  radio-button {
+    position: relative;
+    display: block;
+    font-size: 18px;
+  }
+
+  radio-button:focus {
+    outline: none;
+  }
+
+  radio-button::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    position: absolute;
+    left: -18px;
+    top: 7px;
+    border-radius: 50%;
+  }
+
+  radio-button:focus::before {
+    box-shadow: 0 0 3px 3px #83BEFF;
+  }
+
+  radio-button[aria-checked="true"]::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    left: -18px;
+    top: 7px;
+    border-radius: 50%;
+  }
