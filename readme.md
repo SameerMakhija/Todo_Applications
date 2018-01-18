@@ -19,3 +19,9 @@ These code repository are only for learning purposes. I do lot of online web tra
     - Tree (event delegation )
     - Table (Columns sorting with event delegation)
     - Remove List Block 
+
+5. Custom components 
+    - tooltip
+    - radio-group & radio-button
+    - input ( convert div to inputBox)
+    - select-box
